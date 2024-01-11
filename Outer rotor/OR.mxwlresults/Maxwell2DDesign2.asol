@@ -1,0 +1,94 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002023, month=000000000006, day=000000000026, hour=000000000014, min=000000000038, sec=000000000052)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000002151, lin=000000000075, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock4'
+	SolutionName='Transient'
+	SolutionID=48
+	V=94
+	$begin 'States'
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies()
+		SolutionType=1
+		CenterFreq=0
+	$end 'Definition'
+$end 'SolutionBlock4'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=47, Instance=\'SetupDefinition\', Solution=-1, VersionID=0)'='SolutionBlock3'
+	'SolutionKey(SimSetup=47, Instance=\'SolutionDefinition\', Solution=48, VersionID=94)'='SolutionBlock4'
+$end 'BlockMapName'
+$begin 'SolutionBlock3'
+	SimSetupID=47
+	SimSetupName='Setup1'
+	VersionID=0
+	SolveSetupID=0
+	$begin 'StartingMesh'
+		IDDblMap(71, -1)
+		$begin 'DataMap'
+			VID=49
+			Ver=0
+			SM(DblID=71, Dir='DV49_S47_V0.smesh71/')
+		$end 'DataMap'
+	$end 'StartingMesh'
+	$begin 'MeshOps'
+		OPS(VID=49, Ver=0, ID=0, ID=1, ID=4)
+	$end 'MeshOps'
+	$begin 'Profiles'
+		P(VID=49, Ver=0, File='DV49_S47_V0.profile')
+	$end 'Profiles'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=49, Ver=0, Dir='DV49_S47_MI0_V0.sd/')
+		$end 'SubData'
+	$end 'MI'
+	$begin 'MeshGeomInfo'
+		MGI(VID=49, Ver=0, Dir='DV49_S47_V0_MGI/')
+	$end 'MeshGeomInfo'
+	$begin 'AMOsetup'
+		AMO(VID=49, Ver=0, File='DV49_S47_V0.amo')
+	$end 'AMOsetup'
+$end 'SolutionBlock3'
+$begin 'SolutionBlock1'
+	ProductName=''
+	CircuitName='Maxwell2DDesign2'
+	VersionID=44
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=139
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='fractions=\'1\'', ID=95)
+		Map(V='fractions=\'4\'', ID=49)
+	$end 'VariationIDs'
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	$begin 'InitialMeshes'
+		M(VID=49, Ver=44, Dir='DV49_V44.imesh/')
+	$end 'InitialMeshes'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=49, Ver=44, Dir='DV49_MI0_V44.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock1'
+$begin '$index$'
+	$begin '$index$'
+		SolutionBlock1(pos=1607, lin=51, lvl=0)
+		SolutionBlock4(pos=370, lin=1, lvl=0)
+		BlockMapName(pos=613, lin=14, lvl=0)
+		SolutionBlock3(pos=890, lin=19, lvl=0)
+		$base_index$(pos=0, lin=1, lvl=0)
+		$index$(pos=2151, lin=75, lvl=0)
+	$end '$index$'
+$end '$index$'

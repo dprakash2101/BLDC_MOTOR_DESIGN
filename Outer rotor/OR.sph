@@ -1,0 +1,74 @@
+* 0;OR.ckt
+* Project: D:/Assignment/Outer rotor/OR.amcp
+* Design: OR
+
+*BeginParamDef
+*EndParamDef
+
+
+*begin toplevel circuit
+.PARAM Kle=1
+RB net_7 net_4 0.0880887ohm
+LPhaseC net_5 net_1 1 Winding
+LPhaseA net_3 net_1 1 Winding
+LPhaseB net_4 net_1 1 Winding
+RA net_6 net_3 0.0880887ohm
+LA net_9 net_6 '-1.70735e-007*Kle' 
+RC net_8 net_5 0.0880887ohm
+LB net_10 net_7 '-1.70735e-007*Kle' 
+LC net_11 net_8 '-1.70735e-007*Kle' 
+VIA net_36 net_9 DC 0 
+.PRINT TRAN PROBE VIA(t) I(VIA)
+VIB net_37 net_10 DC 0 
+.PRINT TRAN PROBE VIB(t) I(VIB)
+V14 net_18 0 PULSE (-1 1V 7.5 0 0 30 90) TYPE=POS
+V15 net_19 0 PULSE (-1 1V 22.5 0 0 30 90) TYPE=POS
+VIC net_35 net_11 DC 0 
+.PRINT TRAN PROBE VIC(t) I(VIC)
+V16 net_20 0 PULSE (-1 1V 37.5 0 0 30 90) TYPE=POS
+R20 net_18 net_29 100ohm
+V19 net_23 0 PULSE (-1 1V 82.5 0 0 30 90) TYPE=POS
+V17 net_21 0 PULSE (-1 1V 52.5 0 0 30 90) TYPE=POS
+V18 net_22 0 PULSE (-1 1V 67.5 0 0 30 90) TYPE=POS
+R23 net_21 net_29 100ohm
+R21 net_19 net_29 100ohm
+R22 net_20 net_29 100ohm
+IVc3 net_20 0 DC 0 
+.PRINT TRAN PROBE IVc3(t) V(IVc3)
+IVc1 net_18 0 DC 0 
+.PRINT TRAN PROBE IVc1(t) V(IVc1)
+IVc2 net_19 0 DC 0 
+.PRINT TRAN PROBE IVc2(t) V(IVc2)
+R24 net_22 net_29 100ohm
+R25 net_23 net_29 100ohm
+IVc5 net_22 0 DC 0 
+.PRINT TRAN PROBE IVc5(t) V(IVc5)
+IVc4 net_21 0 DC 0 
+.PRINT TRAN PROBE IVc4(t) V(IVc4)
+IVc6 net_23 0 DC 0 
+.PRINT TRAN PROBE IVc6(t) V(IVc6)
+V33 0 net_32 12V
+V32 net_30 0 12V
+D34 net_32 net_36 DModel1 
+D38 net_32 net_35 DModel1 
+D35 net_36 net_30 DModel1 
+D39 net_35 net_30 DModel1 
+D41 net_36 net_40 DModel1 
+D37 net_37 net_30 DModel1 
+D36 net_32 net_37 DModel1 
+D40 net_30 net_39 DModel1 
+D44 net_30 net_43 DModel1 
+S_48 net_41 net_37 IVc3 POS SModel1 OFF
+S_47 net_40 net_32 IVc4 POS SModel1 OFF
+D45 net_35 net_44 DModel1 
+D42 net_30 net_41 DModel1 
+D43 net_37 net_42 DModel1 
+S_46 net_39 net_36 IVc1 POS SModel1 OFF
+.MODEL DModel1 D (IS=0.002585A RS=0ohm N=1 EG=1.11V XTI=3 BV=1e+030V IBV=0.001A TNOM=27)
+.MODEL SModel1 SW (Ron=0.001ohm Roff=1000000ohm Von=0V Voff=0V)
+S_51 net_44 net_32 IVc2 POS SModel1 OFF
+S_50 net_43 net_35 IVc5 POS SModel1 OFF
+S_49 net_42 net_32 IVc6 POS SModel1 OFF
+
+*end toplevel circuit
+.end
