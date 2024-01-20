@@ -75,7 +75,7 @@ Runner 3-D Design](placeholder-inner-3d-design-image.png)
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/dprakash2101/MotorDesignAssignment.git
+   git clone https://github.com/dprakash2101/BLDC_MOTOR_DESIGN.git
    ```
 2. You need to have Ansys Maxwell Installed in your machine.
 
