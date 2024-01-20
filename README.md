@@ -1,6 +1,6 @@
-# Inner and Outer Runner Rotor BLDC Motor Designs
+# Motor Design Assignment
 
-This repository contains the design files and specifications for both Inner and Outer Runner Rotor Brushless DC (BLDC) Motors. Each motor is designed to meet specified requirements, including power, voltage, efficiency, and dimensions.
+This repository contains the design files and specifications for two Brushless DC (BLDC) motors: Inner Runner Rotor BLDC Motor and Outer Runner Rotor BLDC Motor.
 
 ## Inner Runner Rotor BLDC Motor
 
@@ -17,17 +17,11 @@ This repository contains the design files and specifications for both Inner and 
 
 ### Design Files
 
-#### 2-D Design
-
-![Inner Runner 2-D Design](link-to-inner-2d-design-image.png)
-
-#### 3-D Design
-
-![Inner Runner 3-D Design](link-to-inner-3d-design-image.png)
+Runner 3-D Design](placeholder-inner-3d-design-image.png)
 
 ### Contents
 
-1. **Specifications:** Detailed motor specifications and requirements.
+1. **Specifications:** [Inner Runner Rotor Specifications](Question%201%20solution.pdf)
 2. **Stator Design:** Specifications and dimensions for the stator.
 3. **Rotor Design:** Specifications and dimensions for the rotor.
 4. **Material Selection:** Details about the materials used in the motor components.
@@ -58,17 +52,10 @@ This repository contains the design files and specifications for both Inner and 
 
 ### Design Files
 
-#### 2-D Design
-
-![Outer Runner 2-D Design](link-to-outer-2d-design-image.png)
-
-#### 3-D Design
-
-![Outer Runner 3-D Design](link-to-outer-3d-design-image.png)
 
 ### Contents
 
-1. **Specifications:** Detailed motor specifications and requirements.
+1. **Specifications:** [Outer Runner Rotor Specifications](Question%202%20solution.pdf)
 2. **Stator Design:** Specifications and dimensions for the stator.
 3. **Rotor Design:** Specifications and dimensions for the rotor.
 4. **Material Selection:** Details about the materials used in the motor components.
@@ -90,5 +77,7 @@ This repository contains the design files and specifications for both Inner and 
    ```bash
    git clone https://github.com/dprakash2101/MotorDesignAssignment.git
    ```
-# Author
+2. You need to have Ansys Maxwell Installed in your machine.
+
+## Author
 [Devi Prakash Kandikonda](https://github.com/dprakash2101)
